@@ -3,7 +3,8 @@
 }
 
 .TabelaProdutos th{
-    background-color: salmon;
+    background-color: #363636;
+    color: #fff;
 }
 
 .TabelaProdutos .Par {
