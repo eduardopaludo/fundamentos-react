@@ -1,26 +1,33 @@
+import './TabelaProdutos.css'
 import produtos from '../../data/produtos'
 
 export default (props) => {
 
-    const tabelaProdutos = produtos.map((produto) => {
-        return (
-            <tr>
-                <td>{produto.id}</td>
-                <td>{produto.nome}</td>
-                <td>R$ {produto.preco}</td>
-            </tr>
-        )
-    })
+    function getLinhas() {
+        return produtos.map((produto, i) => {
+            return (
+                <tr className={i % 2 == 0 ? 'Par' : ''}>
+                    <td>{produto.id}</td>
+                    <td>{produto.nome}</td>
+                    <td>R$ {produto.preco.toFixed(2).replace('.', ',')}</td>
+                </tr>
+            )
+        })
+    }
 
     return (
-        <div>
+        <div className="TabelaProdutos">
             <table>
-                <tr>
-                    <td>ID</td>
-                    <td>Nome</td>
-                    <td>Preço</td>
-                </tr>
-                {tabelaProdutos}
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {getLinhas()}
+                </tbody>
             </table>
         </div>
     )
