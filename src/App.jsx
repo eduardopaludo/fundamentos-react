@@ -22,7 +22,6 @@ export default () => (
             <Card titulo="#08 - Rendezicação Condicional" color="#CC527A">
                 <ParOuImpar numero={21}></ParOuImpar>
                 <UsuarioInfo usuario={{nome: "Eduardo"}}></UsuarioInfo>
-                <UsuarioInfo></UsuarioInfo>
             </Card>
 
             <Card titulo="#07 - Desafio Repetição" color="#2F9599">
