@@ -1,5 +1,6 @@
 import './App.css'
 
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import Alunos from './components/repeticao/Alunos'
@@ -20,6 +21,8 @@ export default () => (
 
             <Card titulo="#08 - Rendezicação Condicional" color="#CC527A">
                 <ParOuImpar numero={21}></ParOuImpar>
+                <UsuarioInfo usuario={{nome: "Eduardo"}}></UsuarioInfo>
+                <UsuarioInfo></UsuarioInfo>
             </Card>
 
             <Card titulo="#07 - Desafio Repetição" color="#2F9599">
