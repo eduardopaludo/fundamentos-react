@@ -1,5 +1,7 @@
 import './App.css'
 
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import DiretaPai from './components/comunicacao/DiretaPai'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
@@ -18,6 +20,14 @@ export default () => (
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+            <Card titulo="#09 - Comunicação Indireta" color="#78C0A8">
+                <IndiretaPai></IndiretaPai>
+            </Card>
+
+            <Card titulo="#09 - Comunicação Direta" color="#E8175D">
+                <DiretaPai></DiretaPai>
+            </Card>
 
             <Card titulo="#08 - Rendezicação Condicional" color="#CC527A">
                 <ParOuImpar numero={21}></ParOuImpar>
