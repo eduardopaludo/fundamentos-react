@@ -16,7 +16,6 @@ export default props => {
 
     return (
         <div>
-            <div>Pai</div>
             <span>{nome} </span>
             <span><strong>{idade} </strong></span>
             <span>{nerd ? 'Verdadeiro' : 'False'}</span>
