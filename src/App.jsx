@@ -44,7 +44,7 @@ export default () => (
                 <DiretaPai></DiretaPai>
             </Card>
 
-            <Card titulo="#08 - Rendezicação Condicional" color="#CC527A">
+            <Card titulo="#08 - Renderização Condicional" color="#CC527A">
                 <ParOuImpar numero={21}></ParOuImpar>
                 <UsuarioInfo usuario={{nome: "Eduardo"}}></UsuarioInfo>
             </Card>

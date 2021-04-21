@@ -2,6 +2,10 @@ import './Contador.css'
 
 import { useState} from 'react'
 
+import Display from './Display'
+import Botoes from './Botoes'
+import PassoForm from './PassoForm'
+
 export default props => {
 
     const [numero, setNumero] = useState(props.numeroInicial || 0)
@@ -10,15 +14,9 @@ export default props => {
     return (
         <div className='Contador'>
             <h2>Contador</h2>
-            <h3>{numero}</h3>
-            <div>
-                <label htmlFor='inputPasso'>Passo: </label>
-                <input id='inputPasso' type='number'
-                    value={passo} onChange={(e) => setPasso(+e.target.value)}>
-                </input>
-            </div>
-            <button onClick={() => setNumero(numero + passo)}>+</button>
-            <button onClick={() => setNumero(numero - passo)}>-</button>
+            <Display numero={numero}></Display>
+            <PassoForm passo={passo} setPasso={setPasso}></PassoForm>
+            <Botoes setInc={() => setNumero(numero + 1)} setDec={() => setNumero(numero - 1)}></Botoes>
         </div>
     )
 
