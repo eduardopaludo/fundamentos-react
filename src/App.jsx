@@ -1,5 +1,6 @@
 import './App.css'
 
+import Mega from './components/mega/Mega'
 import ContadorFuncao from './components/contador/ContadorFuncao'
 import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input'
@@ -23,6 +24,10 @@ export default () => (
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+            <Card titulo="#14 - Mega" color="#F26B38">
+                <Mega qtde={6}></Mega>
+            </Card>
 
             <Card titulo="#13 - Contador (Função)" color="#2F9599">
                 <ContadorFuncao numeroInicial={10} passoInicial={1}></ContadorFuncao>
